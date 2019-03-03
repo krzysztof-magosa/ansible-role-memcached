@@ -1,0 +1,20 @@
+# Version to be installed
+memcached_version: "{{ memcached_default_version }}"
+
+# Whether to enable daemon
+memcached_enabled: true
+
+# Amount of memory to use (in megabytes)
+memcached_memory: 64
+
+# Maximum number of connections
+memcached_max_connections: 1024
+
+# IP address to listen on
+memcached_listen_ip: "0.0.0.0"
+
+# Port to listen on
+memcached_listen_port: 11211
+
+# Custom options
+memcached_custom_options: []

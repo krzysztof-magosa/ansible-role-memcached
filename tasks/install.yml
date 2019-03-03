@@ -1,0 +1,4 @@
+- name: Install memcached
+  package:
+    name: "{{ memcached_pkg }}{% if memcached_version %}-{{ memcached_version }}{% endif %}"
+    state: present

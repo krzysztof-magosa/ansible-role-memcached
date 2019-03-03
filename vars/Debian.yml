@@ -1,0 +1,5 @@
+memcached_default_version: ""
+memcached_pkg: "memcached"
+memcached_conf_file: "/etc/memcached.conf"
+memcached_services:
+  - "memcached"

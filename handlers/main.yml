@@ -1,0 +1,7 @@
+- name: Restart memcached
+  service:
+    name: "{{ item }}'"
+    state: restarted
+  listen: memcached:restart
+  when: memcached_enabled and not (memcached__service_start | default(false))
+  loop: "{{ memcached_services }}"

@@ -1,0 +1,12 @@
+- name: Enable service
+  service:
+    name: "{{ item }}"
+    enabled: "{{ memcached_enabled }}"
+  loop: "{{ memcached_services }}"
+
+- name: Start service
+  service:
+    name: "{{ item }}"
+    state: "{{ memcached_enabled | ternary('started', 'stopped') }}"
+  loop: "{{ memcached_services }}"
+  register: memcached__service_start

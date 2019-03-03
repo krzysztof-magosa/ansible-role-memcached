@@ -1,0 +1,8 @@
+{{ ansible_managed | comment }}
+
+PORT="{{ memcached_listen_port }}"
+USER="memcached"
+MAXCONN="{{ memcached_max_connections }}"
+CACHESIZE="{{ memcached_memory }}"
+OPTIONS="-l {{ memcached_listen_ip }} {{ memcached_custom_options | join(' ') }}"
+

@@ -1,0 +1,22 @@
+- import_tasks: variables.yml
+  tags:
+    - memcached
+    - memcached_variables
+    - memcached_install
+    - memcached_config
+    - memcached_service
+
+- import_tasks: install.yml
+  tags:
+    - memcached
+    - memcached_install
+
+- import_tasks: config.yml
+  tags:
+    - memcached
+    - memcached_config
+
+- import_tasks: service.yml
+  tags:
+    - memcached
+    - memcached_service

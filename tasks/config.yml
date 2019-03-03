@@ -1,0 +1,8 @@
+- name: Template configuration
+  template:
+    src: "{{ ansible_facts.os_family }}/memcached.conf.j2"
+    dest: "{{ memcached_conf_file }}"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+  notify: "memcached:restart"
