@@ -6,7 +6,7 @@
 Installs and configures memcached
 
 ## Requirements
-* Ansible 2.5
+* Ansible 2.5 or better
 
 ## Supported systems
 * CentOS (tested on 7)
