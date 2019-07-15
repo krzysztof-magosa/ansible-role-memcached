@@ -10,7 +10,7 @@ Installs and configures memcached
 
 ## Supported systems
 * CentOS (tested on 7)
-* Debian (tested on Stretch)
+* Debian (tested on Buster, Stretch)
 * Ubuntu (tested on Bionic)
 * Alpine (tested on latest)
 
