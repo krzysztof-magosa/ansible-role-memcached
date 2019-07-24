@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: "memcached"
   author: "Krzysztof Magosa"
   description: "Installs and configures memcached"
   license: "MIT"
